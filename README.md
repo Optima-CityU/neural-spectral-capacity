@@ -137,7 +137,7 @@ evolutionary search (1,000 proxy evaluations); NSC-DP uses neither.*
 ```bash
 git clone https://github.com/Optima-CityU/neural-spectral-capacity.git
 cd neural-spectral-capacity
-pip install numpy scipy matplotlib torch torchvision timm transformers peft thop
+pip install -r requirements.txt
 export PYTHONPATH=nsc:ranking:search/txl:search/autoformer:pruning_lonas:appendix
 ```
 

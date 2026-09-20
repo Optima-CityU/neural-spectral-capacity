@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+torch
+torchvision
+timm
+transformers
+peft
+thop
