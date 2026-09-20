@@ -179,43 +179,6 @@ appendix/          aggregation choice, MP finite-size convergence, init-variance
                    concavity of ψ_MP
 ```
 
-## Reproducing the paper
-
-**Method**
-- ψ_MP: `nsc/nsc_utils.py`
-
-**Ranking across architecture families (§4.1, Figure 2)**
-- NSC scores: `ranking/compute_flexibert.py`, `compute_gpt2.py`, `compute_autoformer.py`,
-  `compute_nats_sss.py`, `compute_mnv3.py`
-- Baselines: `ranking/compute_flops_all.py` (#FLOPs); `ranking/run_realdata_proxy.py`
-  (W-PCA, ZeroLM, SNIP, GradNorm, SynFlow), which uses the per-family proxy implementations in
-  `ranking/eval_all_zcps.py` (FlexiBERT), `ranking/eval_gpt2_baselines.py` (GPT-2) and
-  `ranking/eval_autoformer_tiny.py` (AutoFormer)
-- FlexiBERT, NSC and all training-free proxies (per-architecture hidden size, per-layer FFN
-  widths): `ranking/eval_flexibert.py`
-
-**Architecture search via NSC-DP (§4.2)**
-- Transformer-XL: `search/txl/search_txl_space.py` (search space and DP),
-  `search/txl/nsc_dp_search.py` (NSC-DP), `search/txl/run_independent_ea.py` (EA baselines),
-  `search/txl/train_wt103_txl.py` (training on WikiText-103; requires kimiyoung/transformer-xl)
-- AutoFormer: `search/autoformer/nsc_dp_autoformer.py` (NSC-DP); the returned subnets are evaluated
-  with the AutoFormer supernet evaluation in microsoft/Cream
-
-**Structured pruning of LLaMA-7B (§4.3, Figure 3, multi-budget appendix)**
-- NSC-DP: `pruning_lonas/build_nsch_mp_cache.py` → `lonas_nscdp_full_pareto.py`;
-  TFLOPs-constrained Pareto front (operating points A–G): `lonas_nscdp_tflops_dp.py`;
-  search space and DP core: `lonas_nscdp_original_space.py`
-- Baselines (proxy + GA): `pruning_lonas/run_zcp_baselines_full.py`
-- Avg-8 evaluation: `pruning_lonas/lonas_eval_unified_table_avg8.py`
-  (with `lonas_eval_unified_table.py`, `bench_eval_500.py`)
-
-**Appendix ablations**
-- Aggregation choice: `appendix/ablation_aggregation_specfaithful.py`, `ablation_min_generalization.py`,
-  `aggregation_autoformer.py` (aggregation functions in `appendix/ablation_aggregation.py`)
-- MP finite-size convergence: `appendix/ablation_mp_convergence.py`
-- Robustness to initialization convention: `appendix/ablation_init_variance.py`
-- Concavity of ψ_MP: `appendix/plot_psi_concavity.py`
-
 ## External resources
 
 - **FlexiBERT**: `BERT_benchmark.json` and the ELECTRA modeling code from the [FlexiBERT](https://github.com/jha-lab/txf_design-space) release.
