@@ -197,7 +197,8 @@ appendix/          aggregation choice, MP finite-size convergence, init-variance
   title   = {Neural Spectral Capacity: Measuring and Designing Architectures from Network Specification Alone},
   author  = {Zhu, Chenyu and Zhao, Ruoyu and Lu, Zhichao},
   journal = {arXiv preprint arXiv:2609.23087},
-  year    = {2026}
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2609.23087}
 }
 ```
 
