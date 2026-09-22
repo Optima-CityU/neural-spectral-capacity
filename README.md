@@ -8,8 +8,6 @@ Chenyu Zhu · Ruoyu Zhao · [Zhichao Lu](mailto:zhichao.lu@cityu.edu.hk)
 
 Department of Computer Science, City University of Hong Kong
 
-[**Paper**](https://arxiv.org/abs/2609.23087) · [**PDF**](https://arxiv.org/pdf/2609.23087)
-
 [![arXiv](https://img.shields.io/badge/arXiv-2609.23087-b31b1b.svg)](https://arxiv.org/abs/2609.23087)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](#installation)
@@ -196,15 +194,10 @@ appendix/          aggregation choice, MP finite-size convergence, init-variance
 
 ```bibtex
 @article{zhu2026nsc,
-  title         = {Neural Spectral Capacity: Measuring and Designing Architectures from Network Specification Alone},
-  author        = {Zhu, Chenyu and Zhao, Ruoyu and Lu, Zhichao},
-  journal       = {arXiv preprint arXiv:2609.23087},
-  year          = {2026},
-  eprint        = {2609.23087},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.LG},
-  doi           = {10.48550/arXiv.2609.23087},
-  url           = {https://arxiv.org/abs/2609.23087}
+  title   = {Neural Spectral Capacity: Measuring and Designing Architectures from Network Specification Alone},
+  author  = {Zhu, Chenyu and Zhao, Ruoyu and Lu, Zhichao},
+  journal = {arXiv preprint arXiv:2609.23087},
+  year    = {2026}
 }
 ```
 
