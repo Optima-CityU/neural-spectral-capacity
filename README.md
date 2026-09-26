@@ -197,11 +197,10 @@ appendix/          aggregation choice, MP finite-size convergence, init-variance
 
 ```bibtex
 @inproceedings{zhu2026nsc,
-  title     = {Neural Spectral Capacity: Measuring and Designing Architectures from Network Specification Alone},
-  author    = {Zhu, Chenyu and Zhao, Ruoyu and Lu, Zhichao},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year      = {2026},
-  url       = {https://arxiv.org/abs/2609.23087}
+  title={Neural Spectral Capacity: Measuring and Designing Architectures from Network Specification Alone},
+  author={Zhu, Chenyu and Zhao, Ruoyu and Lu, Zhichao},
+  booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
+  year={2026}
 }
 ```
 
